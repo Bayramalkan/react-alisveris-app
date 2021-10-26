@@ -54,12 +54,7 @@ export default function App() {
     <BooksContext.Provider value={{state: state, addToCart, increase, decrease, removeFromCart,totalCartCount}}>
       <div className="App">
         <h1>
-          Alışveriş Sepeti Yapımı
-          <img
-            src="https://avatars3.githubusercontent.com/u/60869810?v=4"
-            alt="React Dersleri"
-          />{" "}
-          React Dersleri
+          Alışveriş Sepeti 
         </h1>
         <Route exact path="/" component={Products} />
         <Route path="/cart" component={Cart} />
